@@ -4,7 +4,8 @@ A minimalist on-chain referral tracking system.
 
 ## Overview
 
-This contract allows tracking referral relationships between addresses. Any address can register a referrer-referee relationship.
+This contract allows tracking referral relationships between addresses. Any address can register a referrer-referee
+relationship.
 
 ## Features
 
