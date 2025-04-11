@@ -43,3 +43,4 @@
   optimism = "https://optimism-rpc.publicnode.com"
   polygon = "https://polygon-bor-rpc.publicnode.com"
   sepolia = "https://ethereum-sepolia-rpc.publicnode.com"
+  op_sepolia = "https://optimism-sepolia.infura.io/v3/${API_KEY_INFURA}"

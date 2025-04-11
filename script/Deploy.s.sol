@@ -11,7 +11,7 @@ contract Deploy is BaseScript {
         // Deploy the ReferralTracker contract
         referralTracker = new ReferralTracker();
 
-        // Log the address for easy reference
+        // Log the contract address for easy reference
         console2.log("ReferralTracker deployed at:", address(referralTracker));
     }
 }

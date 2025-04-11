@@ -30,6 +30,21 @@ forge test
 forge script script/Deploy.s.sol --broadcast --fork-url http://localhost:8545
 ```
 
+## Deployment
+
+Update your `.env` file with your configuration:
+
+```bash
+cp .env.example .env
+# Edit .env with your own keys
+```
+
+```bash
+forge script script/Deploy.s.sol --rpc-url op_sepolia --private-key <YOUR_PRIVATE_KEY> --broadcast --verify
+```
+
+Example deployment to OP Sepolia: https://sepolia-optimism.etherscan.io/address/0x03917205bfef0692fae6e26dd87fcc7f96123af2#code
+
 ## Support
 
 Feel free to reach out to [Julien](https://github.com/julienbrg) on [Farcaster](https://warpcast.com/julien-),
