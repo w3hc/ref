@@ -116,9 +116,9 @@ contract ReferralTrackerTest is Test {
     /// @notice Test referring in a chain (A refers B, B refers C)
     function testReferralChain() public {
         // Create a referral chain
-        referralTracker.register(referrer, referee1);     // referrer refers referee1
-        referralTracker.register(referee1, referee2);     // referee1 refers referee2
-        referralTracker.register(referee2, referee3);     // referee2 refers referee3
+        referralTracker.register(referrer, referee1); // referrer refers referee1
+        referralTracker.register(referee1, referee2); // referee1 refers referee2
+        referralTracker.register(referee2, referee3); // referee2 refers referee3
 
         // Check the chain
         assertEq(referralTracker.referredBy(referee1), referrer);
