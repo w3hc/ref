@@ -2,6 +2,8 @@
 
 A minimalist on-chain referral tracking system.
 
+Demo referral link: **https://genji-app.netlify.app/referral/0x3e50d7faf96b4294367cc3563b55cbd02bb4ce4d**
+
 ## Overview
 
 This contract allows tracking referral relationships between addresses. Any address can register a referrer-referee
