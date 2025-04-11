@@ -1,13 +1,17 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.8.29 <0.9.0;
 
-import { Foo } from "../src/Foo.sol";
-
+import { ReferralTracker } from "../src/ReferralTracker.sol";
 import { BaseScript } from "./Base.s.sol";
+import { console2 } from "forge-std/src/console2.sol";
 
-/// @dev See the Solidity Scripting tutorial: https://book.getfoundry.sh/guides/scripting-with-solidity
+/// @notice Deployment script for ReferralTracker
 contract Deploy is BaseScript {
-    function run() public broadcast returns (Foo foo) {
-        foo = new Foo();
+    function run() public broadcast returns (ReferralTracker referralTracker) {
+        // Deploy the ReferralTracker contract
+        referralTracker = new ReferralTracker();
+
+        // Log the contract address for easy reference
+        console2.log("ReferralTracker deployed at:", address(referralTracker));
     }
 }
