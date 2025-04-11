@@ -43,7 +43,8 @@ cp .env.example .env
 forge script script/Deploy.s.sol --rpc-url op_sepolia --private-key <YOUR_PRIVATE_KEY> --broadcast --verify
 ```
 
-Example deployment to OP Sepolia: https://sepolia-optimism.etherscan.io/address/0x03917205bfef0692fae6e26dd87fcc7f96123af2#code
+Example deployment to OP Sepolia:
+https://sepolia-optimism.etherscan.io/address/0x03917205bfef0692fae6e26dd87fcc7f96123af2#code
 
 ## Support
 
